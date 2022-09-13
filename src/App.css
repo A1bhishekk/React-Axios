@@ -1,0 +1,43 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+h1{
+  margin-top: 20px;
+  color: aquamarine;
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 2fr ;
+  gap: 15px;
+  padding: 20px;
+}
+
+.card{
+  border: 2px solid aquamarine;
+  border-radius: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 200px;
+}
+
+h2{
+  color: rgb(225, 7, 98);
+}
+p{
+  color: rgb(191, 0, 255);
+  text-transform: capitalize;
+}
+
+@media  only screen and (max-width: 700px){
+  .container{
+    grid-template-columns: 2fr;
+  }
+}
